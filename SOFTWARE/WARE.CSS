@@ -1,0 +1,603 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.only-to-flex {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*                   NAV BAR CONTENT SETTING           */
+nav {
+    font-size: 1.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(237, 235, 235);
+    background-color: rgb(13, 13, 42);
+    width: 180px;
+    height: 43rem;
+}
+
+.start-up {
+    display: flex;
+    flex-wrap: wrap;
+    height: 19.3rem;
+    margin-top: 20px;
+}
+
+.start-up div {
+    padding-bottom: 5px;
+    height: 1.2rem;
+    margin-left: 8px;
+    display: flex;
+    gap: 5px;
+}
+
+#line {
+    margin-right: 5px;
+    height: 1.2rem;
+    width: 100%;
+    border-bottom: 1.5px solid white;
+}
+
+nav .start-up div:hover {
+    border-bottom: 2.2px solid white;
+    cursor: pointer;
+    font-size: 1.16rem;
+    box-shadow: 0 0 14px 0 rgba(71, 101, 112, 0.8);
+}
+
+#line:hover {
+    font-size: 1.2rem;
+}
+
+/*                 NAV BAR PROFILE SETTING CSS                  */
+nav img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.profile-cont div {
+    display: flex;
+    gap: 3px;
+    margin-top: 5px;
+}
+
+.profile-cont {
+    margin-top: 5rem;
+}
+
+#profile-p:hover {
+    font-size: 1.2rem;
+    border-bottom: 2px solid lightskyblue;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+/*                  MAIN INVOICE MAKING               */
+
+/*                 BUSINESS NAME AND ADRESS STYLING     */
+
+.headings {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headings div {
+    flex-wrap: wrap;
+    margin-left: 65px;
+    display: flex;
+    gap: 4px;
+}
+
+.uper-toflex {
+    width: 1000px;
+    height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.uper-toflex span {
+    display: flex;
+    gap: 4px;
+}
+
+.uper-toflex span p {
+    padding-top: 5px;
+}
+
+i {
+    color: rgb(118, 103, 202);
+}
+
+.profile-cont i {
+    color: rgb(132, 128, 128);
+}
+
+/*       MAIN INVOICE MAKING       */
+
+.display-block {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.selection {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    height: 23rem;
+}
+
+.selection select:focus {
+    border: none;
+}
+
+.selection select {
+    width: 650px;
+    height: 1.3rem;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.inv-flex {
+    margin-top: 1rem;
+    display: flex;
+    height: 27rem;
+    background-color: #faf8fa;
+    margin-left: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(71, 101, 112, 0.4);
+}
+
+.qtys {
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    height: 24rem;
+}
+
+.qtys input {
+    padding: 3px;
+    border: none;
+    width: 96px;
+    height: 0.8rem;
+}
+
+#qyu-input {
+    border-bottom: 1.25px solid black;
+}
+
+.prices {
+    margin-left: 10px;
+    height: 24rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 0.5rem;
+    width: 115px;
+}
+
+.prices p {
+    height: 1.2rem;
+    width: 110px;
+    border-bottom: 1px solid black;
+}
+
+.amounts {
+    margin-right: 10px;
+    width: 150px;
+    height: 24rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.amounts p {
+    width: 100%;
+    height: 1.2rem;
+    border-bottom: 1px solid black;
+}
+
+select,
+input {
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.descriptions {
+    margin: 15px 20px;
+    padding: 5px;
+    color: rgb(255, 21, 21);
+}
+
+/*                                                   BOTTOM STYLING                  */
+
+.bottom-flex,
+.bottom-flex span {
+    display: flex;
+}
+
+#total-amt,
+#discount,
+#net-amt {
+    margin-top: 7.5px;
+    width: 140px;
+    height: 1rem;
+}
+
+.totaling {
+    padding: 5px;
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.18rem;
+    margin: 15px 80px;
+}
+
+#reset {
+    margin-top: 2rem;
+    padding: 0.7rem;
+    height: 40px;
+    width: 170px;
+    border: 3px solid rgb(4, 67, 4);
+    background-color: rgb(44, 236, 44);
+    border-radius: 10px;
+    color: darkgreen;
+    font-weight: 600;
+}
+
+#reset:hover {
+    cursor: pointer;
+    border: 2px solid orange;
+}
+
+.menu-pop span {
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid rgb(205, 203, 203);
+    padding: 0.3rem;
+}
+
+.menu-pop span:hover {
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-bottom: 1.09px solid black;
+}
+
+.menu-pop {
+    border: 1.4px solid black;
+    border-radius: 8px;
+    border-top-left-radius: 1px;
+    position: absolute;
+    top: 42px;
+    left: 5px;
+    background-color: #ffffff;
+    width: 250px;
+    padding: 0.6rem;
+    font-size: 1.1rem;
+    animation: menuanim 0.28s ease-out 0s 1 normal;
+}
+
+@keyframes menuanim {
+    0% {
+        font-size: 1px;
+        width: 1px;
+    }
+
+    100% {
+        font-size: 1.1rem;
+        width: 250px;
+    }
+}
+
+.menu-pop i {
+    color: rgb(27, 27, 27);
+    font-weight: 900;
+}
+
+/*                                     invoive done                              */
+.hide {
+    display: none;
+}
+
+.menu-flex {
+    display: flex;
+}
+
+.setting h3 {
+    font-size: 2.09rem;
+    border-bottom: 3px solid gray;
+}
+
+.setting {
+    font-size: 1.5rem;
+    gap: 3rem;
+    margin: 50px 20px;
+    width: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: 10rem;
+}
+
+/*                              BACK GROUND COLOR SETTING                    */
+
+
+.back-g-color {
+    padding: 4.5rem;
+    gap: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 20rem;
+    height: 10rem;
+}
+
+.options {
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 8rem;
+    padding: 1rem;
+}
+
+.options div {
+    margin-top: 4.3px;
+    margin-right: 6px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px double black;
+}
+
+.options div:hover {
+    cursor: pointer;
+}
+
+.hide1 {
+    display: none;
+}
+
+.hide2 {
+    display: none;
+}
+
+.about-detail {
+    margin-left: 3rem;
+    margin-top: 2rem;
+    padding: 1.6rem;
+}
+
+.about-p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 470px;
+    padding: 1.3rem;
+}
+
+.about-p li {
+    border-bottom: 0.4px solid black;
+    margin-top: 10px;
+}
+
+.contact-us-detail {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    padding: 1.rem;
+    font-size: 1.37rem;
+}
+
+.contact-us-detail p {
+    margin-top: 12px;
+}
+
+.employee {
+    font-size: 1.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20rem;
+    width: 50rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    padding: 1.7rem;
+    gap: 4rem;
+}
+
+.employee div {
+    border: 1px solid black;
+    padding: 0.980rem;
+}
+
+.profit img,
+.sale-rep img {
+    height: 32rem;
+}
+
+.stock {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1050px;
+    padding: 1rem;
+    margin-left: 10px;
+}
+
+.edit-profile img {
+    padding: 0.3rex;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.edit-profile {
+    justify-content: center;
+    padding: 2rem;
+    height: 28rem;
+    margin-left: 5rem;
+}
+
+.profile-flex1 {
+    padding: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 4rem;
+    width: 18rem;
+    display: flex;
+}
+
+.withimg-flex {
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+.profile-flex1 input {
+    width: 100%;
+    border: none;
+    border: 1px solid black;
+    padding: 0.7rem;
+}
+
+.business-name {
+    padding: 1rem;
+}
+
+.business-name input {
+    border: none;
+    border: 1px solid black;
+    width: 100%;
+    height: 1.25rem;
+    padding: 0.6rem;
+}
+
+.business-name h4 {
+    padding: 0.5rem;
+}
+
+.sign-in {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: -40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    width: 500px;
+    background-color:rgba(249, 249, 18, 0.693);
+    padding: 2rem;
+    margin: 50px 430px;
+    font-size: 1.4rem;
+}
+
+.sign-in span {
+    left: 0;
+    display: block;
+    width: 500px;
+    padding: 0.45rem;
+}
+
+.sign-in input {
+    width: 100%;
+    border: 1.5px solid black;
+    border-radius: 3.8px;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    padding: 0.7rem;
+}
+.sign-in div{
+    margin-top: 8px;
+    display: block;
+}
+.sign-in div h5:hover{
+    cursor: pointer;
+}
+.sign-in div h5{
+    margin-top: 8px;
+    padding: 0.2rem;
+    font-size: 1.45rem;
+    border-bottom: 2px solid black;
+    display: inline;
+}
+.sign-in div button{
+    padding: 0.5rem;
+    width: 10rem;
+    position: relative;
+    left: 130px;
+    top: 20px;
+    background-color: gold;
+}
+.sign-in div button:hover{
+    opacity: 0.85;
+}
+.blur{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(247, 235, 235, 0.06);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1;
+}
+.loading div{
+    margin-bottom: 10px;
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+    border: 4px solid transparent;
+    border-top: 10px dotted rgb(130, 204, 229);
+    border-radius: 50%;
+    animation: loadingcircle 0.8s ease-in-out 0.3s infinite normal;
+}
+@keyframes loadingcircle{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.loading{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100px;
+    width: 200px;
+    left: 570px;
+    top: 180px;
+    z-index: 10;
+}
+#discount{
+    padding: 0.2rem;
+    border: none;
+    border: 1.5px solid black;
+}
+#profile-ok{
+    background-color: rgb(47, 187, 49);
+    margin-top: 15px;
+    padding: 0.35rem;
+    width: 11.5rem;
+    height: 2rem;
+    border-radius: 6px;
+}
+.hide3 {
+    display: none;
+} 
